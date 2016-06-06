@@ -38,7 +38,7 @@ CXXFLAGS="-Wall" ./waf configure -d optimized --enable-examples --enable-tests &
 ====================================================================================================================================
 In order to install RoboNetSim example for ARGoS:
 ====================================================================================================================================
-enter the folder 'example'
+enter the folder '<RoboNetSim>/argo2-RoboNetSim/example'
 3) create 'build' directory (command 'mkdir build')
 4) enter the folder 'build/'
 5) run the following commands: 'cmake -DCMAKE_BUILD_TYPE=Release ..' and then 'make'
@@ -47,9 +47,10 @@ enter the folder 'example'
 In order to run RoboNetSim example for ARGoS:
 ====================================================================================================================================
 1) run ns-3 in another terminal:
-   - enter the folder <RoboNetSim>/
+   - enter the folder <RoboNetSim>/ns-3-dev-git/
+   - run './waf --run "scratch/swarmanoidIntegration/swarmanoidIntegration scratch/swarmanoidIntegration/default.conf RoboNetSim_NS3.dat"'
 2) run the argos example in another terminal:
-   - enter the folder <RoboNetSim>/example/
+   - enter the folder <RoboNetSim>/argos2-RoboNetSim/example/
    - run 'launch_argos -nc xml/diffusion_5_wifi_ns3.xml'
 
 
